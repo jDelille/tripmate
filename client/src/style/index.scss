@@ -1,0 +1,49 @@
+@import "./variables.scss";
+@import './mixins.scss';
+@import './forms.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--primary-color);
+  color: var(--text-dark);
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  
+  position: relative;
+}
+
+button {
+  border: unset;
+  background: unset;
+  font: unset;
+  color: unset;
+  cursor: pointer;
+}
+
+a {
+ color: unset;
+ text-decoration: unset;
+ @include link()
+}
+
+input, textarea {
+  color: unset;
+  background: unset;
+  font: unset;
+  border: unset;
+  border: 1px solid lightgray;
+}

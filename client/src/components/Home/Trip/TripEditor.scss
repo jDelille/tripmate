@@ -1,0 +1,95 @@
+.add-page {
+ width: 100vw;
+ display: flex;
+ position: relative;
+ 
+ .form {
+  width: 45vw;
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
+  .control-bar {
+   background-color: #fff;
+   padding: 1rem 2rem;
+  }
+  .trip-editor {
+   .trip-info-wrapper {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    position: relative;
+    background-color: #fff;
+    .add-btn {
+     position: absolute;
+     top: 2rem;
+     right: 2rem;
+     background-color: var(--accent-color);
+     color: white;
+     padding: 10px 20px;
+     border-radius: 25px;
+    }
+    .input-wrapper {
+     display: flex;
+     flex-direction: column;
+     width: 45%;
+     position: relative;
+     .new-mates {
+     }
+     .info {
+      margin: 0 auto;
+     }
+    }
+    
+    
+   }
+   .budget-wrapper {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    .updated-budget {
+     margin-top: 2rem;
+    }
+    h1 {
+     padding-bottom: 2rem;
+     font-size: 3rem;
+    }
+    .add-budget {
+      padding: 2rem 2rem;
+      border-radius: 15px;
+      background-color: var(--secondary-color);
+      
+      .show-budget {
+       display: flex;
+       align-items: center;
+       margin-bottom: 1rem;
+       label {
+        font-size: 3rem;
+        color: black;
+        margin: 0;
+      }
+       #budget {
+        width: 48%;
+        border: none;
+        background-color: var(--secondary-color);
+        font-size: 3rem;
+        outline: none;
+        color: black;
+        margin: 0;
+        &::placeholder {
+          color: black;
+        }
+        
+       }
+      }
+     
+     
+    }
+   }
+  }   
+ }
+ .map {
+  width: 55vw;
+ }
+}

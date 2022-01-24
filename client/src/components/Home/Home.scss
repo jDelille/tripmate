@@ -1,0 +1,59 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  .wave-side {
+    width: 50%;
+    background-color: #f6f0e8;
+    padding: 4rem 6rem;
+    .title {
+      position: relative;
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+    svg {
+      z-index: 998;
+      position: absolute;
+      left: 0;
+    }
+    h1 {
+      z-index: 999;
+    }
+    .links {
+      position: relative;
+      
+      .link {
+        background-color: var(--accent-color);
+        color: white;
+        padding: 15px 40px;
+        margin-right: 1rem;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .content {
+   display: flex;
+   align-items: center;
+   position: relative;
+   top: 8rem;
+  }
+  .new-trip,
+  .logout {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 40px;
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+  
+  .map-side {
+    width: 60%;
+    z-index: 999;
+  }
+}
